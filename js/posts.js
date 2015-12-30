@@ -1,5 +1,5 @@
 $(document).ready(function() {       
-  $("aside").load("templates/sidebar.html");                   
+  $("aside").load("../templates/sidebar.html");                   
 });
 
 var disqus = function() {
