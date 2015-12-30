@@ -9,7 +9,7 @@ var display_snippets = function(){
       jQuery.each(value.tags, function(index, tag) {
         tags = tags + "<span class='label label-primary'>" + tag + "</span>";
       });
-      var item = "<article class='post-snippet'><h3>" + value.title + "</h3><h5>" + value.date + "</h5><div class='snippet-text text-justify'>" + value.text + "<a href='" + value.link +"' target='_blank''> <b>Read More -> </b></a></div></article>";
+      var item = "<article class='post-snippet'><h3>" + value.title + "</h3><h5>" + value.date + "</h5><div class='snippet-text text-justify'>" + value.text + "<a href='" + value.link +"'> <b>Read More -> </b></a></div></article>";
     $("main").append(item);                 
   });
 };
