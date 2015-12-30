@@ -1,2 +1,2 @@
 # dshgna.github.io
-My blog
+Created with Codepen, Disqus, Bootstrap, Animate CSS, Jquery

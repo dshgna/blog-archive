@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700);
+
+/* -------- LAYOUT ---------*/
+aside {
+  position:fixed;
+  height:100%;
+  width: 25%; 
+  top:0;
+  left:0;
+  padding: 5% 2% 0%;
+  background-image: url("http://femmebot.github.io/google-type/images/space.jpg");
+  background-size: cover;
+  color: white;
+}
+
+main {
+  margin-left: 25%;
+  padding: 0% 3% 0% 4%;
+}
+
+.social-media {
+  margin: 85% 0% 5% 20%;  
+}
+
+.snippet-text {
+  margin: 2% 0 4%;
+}
+
+/* -------- TYPOGRAPHY ---------*/
+#title {
+  color: white !important;
+  display: block;
+  margin-bottom: 10%;
+}
+
+p, .snippet-text {
+  font-size: 17px;
+  font-family: 'Vollkorn';
+}
+
+#title:hover,
+#title:focus {
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+    text-decoration: none;
+}
+
+aside #title,
+.post-snippet h3, h5,
+.post h1, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+aside #title,
+.post-snippet h3, h5,
+.post h1 {
+  font-weight: 700; 
+}
+
+/* -------- ICONS ---------*/
+i {
+  color: white;
+  padding: 6% 6% 1%;
+}
+
+i:hover {
+    -webkit-animation: flip 1s;
+    animation: flip 1s;
+}
+
+/* -------- LINKS ---------*/
+a {
+  color: #999380;
+}
+
+.post a:hover, 
+.post-snippet a:hover {
+  color: #999380;
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  text-decoration: none;
+}
