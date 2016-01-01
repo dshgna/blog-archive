@@ -16,11 +16,11 @@ var display_snippets = function(){
 
 
 var posts = [
-{ title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+{ title: "Template post",
   date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["Python"],
-  text: "Aliquam tempor odio sed velit convallis, id interdum orci viverra. In eget finibus ligula. Nunc auctor lorem sed elit finibus, sed condimentum elit tincidunt. Nam eget hendrerit velit, quis scelerisque eros. Quisque a nisl sit amet augue malesuada egestas. Ut accumsan lacus mollis felis semper, non ultrices felis sagittis. Maecenas eu consectetur nisi. Maecenas aliquam purus vel euismod mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque hendrerit, ipsum eget pulvinar sollicitudin, augue mauris vehicula neque, ac convallis libero velit quis nulla. Suspendisse ultrices elit quam, lobortis volutpat ante gravida vel."},
+  link: "posts/template.md",
+  tags: ["frontend-dev"],
+  text: "This is a sample post template using Markdown. This can be editted by copying, renaming and editting in Dillinger. TODO includes creating a script to copy and rename posts in node and a script to extract the first paragraph."},
 { title: "Ut eget ante id ligula congue pellentesque sed nec sem",
   date: "29th December 2015",
   link: "posts/template.html",

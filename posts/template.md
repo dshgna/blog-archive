@@ -11,12 +11,9 @@
   <body>
     <div class="container-fluid">
     <aside></aside>
-    <main class="post">
-      <h1>Your Header Here</h1>
-      <h4>29th December 2015</h4>
-      <br>
-      <article class="text-justify post">
-      </article>
+    <main class="post text-justify">
+      #Your Header Here
+      ####29th December 2015
     <div id="disqus_thread"></div>
     </main>
     </div>
