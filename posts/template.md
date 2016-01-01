@@ -1,6 +1,4 @@
-<html >
-  <head>
-    <meta charset="UTF-8">
+<head>
     <title>Post Template</title>
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
@@ -20,4 +18,3 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="../js/posts.js"></script>
   </body>
-</html>
