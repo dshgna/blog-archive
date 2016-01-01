@@ -18,7 +18,7 @@ var display_snippets = function(){
 var posts = [
 { title: "Template post",
   date: "29th December 2015",
-  link: "posts/template.md",
+  link: "posts/template.html",
   tags: ["frontend-dev"],
   text: "This is a sample post template using Markdown. This can be editted by copying, renaming and editting in Dillinger. TODO includes creating a script to copy and rename posts in node and a script to extract the first paragraph."},
 { title: "Ut eget ante id ligula congue pellentesque sed nec sem",
