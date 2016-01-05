@@ -1,44 +1,30 @@
 $(document).ready(function() {
-  $("aside").load("templates/sidebar.html"); 
+  $("aside").load("http://codepen.io/dshgna/pen/qbqjmo.html"); 
   display_snippets();
 });
 
+var toggle_content = function(index){
+  $(document.getElementById(index)).toggle()
+}
+
+var load_markdown = function(index, filename){
+  var path = 'http://dshgna.github.io/posts/' + filename;
+  var md = new Remarkable();
+  var txt = "";
+  $.get(path, function(data) {
+    $(document.getElementById(index)).append(md.render(data));
+  }); 
+}
+
 var display_snippets = function(){
-    jQuery.each(posts, function(index, value) {
-      var tags = ""
-      jQuery.each(value.tags, function(index, tag) {
-        tags = tags + "<span class='label label-primary'>" + tag + "</span>";
-      });
-      var item = "<article class='post-snippet'><h3>" + value.title + "</h3><h5>" + value.date + "</h5><div class='snippet-text text-justify'>" + value.text + "<a href='" + value.link +"'> <b>Read More -> </b></a></div></article>";
-    $("main").append(item);                 
+  $.getJSON('http://dshgna.github.io/posts.json', function(data) {
+     $.each( data.posts, function( index, value ) {
+        var item = "<article class='post-snippet'><h3>" + value.title + "</h3><h5>" + value.date 
+           + "</h5><div class='snippet-text text-justify' id='" + index + "'></div>"
+           + "<button class='toggle-content' onclick='toggle_content("+ index + ")'> Read More/Less -> </button>" 
+           + "</article>";
+       $("main").append(item);
+       load_markdown(index, value.link); 
+    });
   });
 };
-
-
-var posts = [
-{ title: "Template post",
-  date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["frontend-dev"],
-  text: "This is a sample post template using Markdown. This can be editted by copying, renaming and editting in Dillinger. TODO includes creating a script to copy and rename posts in node and a script to extract the first paragraph."},
-{ title: "Ut eget ante id ligula congue pellentesque sed nec sem",
-  date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["Python"],
-  text: "Nam ex felis, viverra nec gravida at, faucibus eget neque. Phasellus condimentum augue ut pellentesque vestibulum. Nullam blandit dolor augue, vel sagittis felis bibendum vestibulum. Mauris ultrices id mi et sagittis. Sed porttitor, nibh a faucibus lacinia, justo neque hendrerit diam, quis pulvinar sem nulla non lorem. In hac habitasse platea dictumst. Nulla sollicitudin eros at fermentum aliquam. Curabitur quis magna ac eros consequat rutrum nec nec enim."},
-  { title: "Cras vel justo eu ex viverra rhoncus sed vel massa",
-  date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["Python"],
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor quam risus, a aliquam ligula rutrum nec. Ut sodales elit ac massa auctor, ut aliquet sem rutrum. Nulla vitae urna leo. Sed id tempor augue, id hendrerit dui. In condimentum pharetra lorem nec posuere. Cras mollis pharetra auctor. Quisque tristique vehicula condimentum. Cras vitae magna laoreet, bibendum dui vel, porttitor arcu. Nunc vulputate tincidunt porta. Sed fringilla pulvinar fringilla. Integer sollicitudin mattis finibus. Nunc sit amet neque erat. In convallis vulputate urna sed elementum."},
-{ title: "Nulla tristique lectus vitae est malesuada posuere quis quis dolor",
-  date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["Python"],
-  text: "Morbi orci mauris, vulputate sed urna a, congue consectetur enim. Curabitur sed orci id diam sollicitudin viverra. Sed aliquet volutpat purus ut vestibulum. In eget orci est. Vivamus pretium porta eros, sit amet luctus augue tempus nec. Curabitur gravida erat ut volutpat bibendum."},
-{ title: "Mauris eget lectus eget ligula semper laoreet",
-  date: "29th December 2015",
-  link: "posts/template.html",
-  tags: ["Python"],
-  text: "Phasellus semper, est sed efficitur dapibus, felis risus cursus mauris, a blandit lectus arcu sagittis sem. Vestibulum sed justo libero. Aliquam erat volutpat. Proin est orci, congue porttitor congue tempor, placerat sed mi. Nulla sagittis tincidunt purus et ultrices. Nulla aliquam ex arcu, vitae ornare magna volutpat at. Suspendisse consequat nisl urna, in gravida enim hendrerit vulputate. Morbi leo nulla, venenatis id elit ac, interdum suscipit sapien. Etiam tincidunt vestibulum lectus, ac laoreet diam consectetur eu. Etiam nec felis interdum, imperdiet ante in, maximus elit. Donec sapien est, pharetra nec imperdiet ac, lacinia fermentum massa."}
-];

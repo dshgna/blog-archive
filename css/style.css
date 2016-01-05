@@ -25,6 +25,7 @@ main {
 
 .snippet-text {
   margin: 2% 0 4%;
+  display: none;
 }
 
 /* -------- TYPOGRAPHY ---------*/
