@@ -1,27 +1,27 @@
-{[{ 
-    title: "Post Template",
-    date: "29th December 2015",
-    link: "template.md",
-    tags: ["Python"]
+{ "posts": [{ 
+    "title": "Post Template",
+    "date": "29th December 2015",
+    "link": "template.md",
+    "tags": ["Python"]
   }, { 
-    title: "Ut eget ante id ligula congue pellentesque sed nec sem",
-    date: "29th December 2015",
-    link: "",
-    tags: ["Python"]
+    "title": "Ut eget ante id ligula congue pellentesque sed nec sem",
+    "date": "29th December 2015",
+    "link": "",
+    "tags": ["Python"]
   }, { 
-    title: "Cras vel justo eu ex viverra rhoncus sed vel massa",
-    date: "29th December 2015",
-    link: "",
-    tags: ["Python"]
+    "title": "Cras vel justo eu ex viverra rhoncus sed vel massa",
+    "date": "29th December 2015",
+    "link": "",
+    "tags": ["Python"]
   }, { 
-    title: "Nulla tristique lectus vitae est malesuada posuere quis quis dolor",
-    date: "29th December 2015",
-    link: "",
-    tags: ["Python"]
+    "title": "Nulla tristique lectus vitae est malesuada posuere quis quis dolor",
+    "date": "29th December 2015",
+    "link": "",
+    "tags": ["Python"]
   }, { 
-    title: "Mauris eget lectus eget ligula semper laoreet",
-    date: "29th December 2015",
-    link: "",
-    tags: ["Python"]
+    "title": "Mauris eget lectus eget ligula semper laoreet",
+    "date": "29th December 2015",
+    "link": "",
+    "tags": ["Python"]
   }]
 }
