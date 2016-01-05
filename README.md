@@ -1,5 +1,6 @@
 # dshgna.github.io
-I used a lot of awesome tools and libraries to make this blog. 
+
+### Kudos 
 - Codepen
 - Disqus
 - Bootstrap
@@ -7,6 +8,9 @@ I used a lot of awesome tools and libraries to make this blog.
 - Jquery
 - Google Fonts
 - Dillinger
+- [Remarkable]: Javascript markdown parser
 
 ### Image Credits
 Sidebar: https://github.com/femmebot/google-type
+
+[Remarkable]: https://github.com/jonschlinkert/remarkable
