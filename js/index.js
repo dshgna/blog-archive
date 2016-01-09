@@ -19,9 +19,9 @@ var load_markdown = function(index, filename){
 var display_snippets = function(){
   $.getJSON('http://dshgna.github.io/posts.json', function(data) {
      $.each( data.posts, function( index, value ) {
-        var item = "<article class='post-snippet'><h3>" + value.title + "</h3><h5>" + value.date 
-           + "</h5><div class='snippet-text text-justify' id='" + index + "'></div>"
-           + "<button class='toggle-content' onclick='toggle_content("+ index + ")'> Read More/Less -> </button>" 
+        var item = "<article class='post'><h1>" + value.title + "</h1><p class='date'>" + value.date + "</p><br>"+
+            "<div class='text-justify md-text' id='" + index + "'></div>"
+           + "<button class='btn btn-default toggle-content' onclick='toggle_content("+ index + ")'> Read More/Less -> </button>" 
            + "</article>";
        $("main").append(item);
        load_markdown(index, value.link); 

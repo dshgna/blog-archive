@@ -1,14 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Lora);
 
 /* -------- LAYOUT ---------*/
 aside {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 1.63043em;
   position:fixed;
   height:100%;
-  width: 25%; 
+  width: 28%; 
   top:0;
   left:0;
-  padding: 5% 2% 0%;
+  padding: 5% 3% 0%;
   background-image: url("http://femmebot.github.io/google-type/images/space.jpg");
   background-size: cover;
   color: white;
@@ -16,16 +20,21 @@ aside {
 
 main {
   margin-left: 25%;
-  padding: 0% 3% 0% 4%;
+  padding: 0% 6% 0% 12%;
 }
 
 .social-media {
-  margin: 85% 0% 5% 20%;  
+  margin: 5% 0% 5% 20%;  
 }
 
-.snippet-text {
-  margin: 2% 0 4%;
+.md-text {
   display: none;
+}
+
+.date {
+  display: block;
+  margin: -3px 0 -5px 0;
+  font-weight: bold;
 }
 
 /* -------- TYPOGRAPHY ---------*/
@@ -35,11 +44,6 @@ main {
   margin-bottom: 10%;
 }
 
-p, .snippet-text {
-  font-size: 17px;
-  font-family: 'Vollkorn';
-}
-
 #title:hover,
 #title:focus {
     -webkit-animation: bounce 1s;
@@ -47,16 +51,21 @@ p, .snippet-text {
     text-decoration: none;
 }
 
-aside #title,
-.post-snippet h3, h5,
-.post h1, h4 {
-  font-family: 'Playfair Display', serif;
+.post {
+  font-family: 'Lora', serif;
+  display: block;
+  margin: 0 0 60px 0;
 }
 
-aside #title,
-.post-snippet h3, h5,
-.post h1 {
-  font-weight: 700; 
+.post > h1 {
+  font-weight: bold;
+}
+
+.post {
+    font-weight: 400;
+    font-size: 1.15em;
+    line-height: 1.63043em;
+    color: #454646;
 }
 
 /* -------- ICONS ---------*/
