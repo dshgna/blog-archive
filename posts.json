@@ -1,27 +1,22 @@
 { "posts": [{ 
+    "title": "Mining the Enron Dataset",
+    "date": "15th December 2015",
+    "link": "EnronML.md",
+    "tags": ["Data Science, Python"]
+  }, { 
+    "title": "Scikit-learn Cheatsheet",
+    "date": "12th January 2016",
+    "link": "ScikitLearn.md",
+    "tags": ["Data Science, Python"]
+  }, { 
+    "title": "Introductory Notes on Machine Learning [Udacity]",
+    "date": "12th January 2016",
+    "link": "NotesUIML.md",
+    "tags": ["Data Science, Python"]
+  }, { 
     "title": "Post Template",
     "date": "29th December 2015",
     "link": "template.md",
-    "tags": ["Python"]
-  }, { 
-    "title": "Notes on Udacity's Intro to Machine Learning",
-    "date": "12th January 2016",
-    "link": "NotesUIML.md",
-    "tags": ["Data Science"]
-  }, { 
-    "title": "Cras vel justo eu ex viverra rhoncus sed vel massa",
-    "date": "29th December 2015",
-    "link": "template.md",
-    "tags": ["Python"]
-  }, { 
-    "title": "Nulla tristique lectus vitae est malesuada posuere quis quis dolor",
-    "date": "29th December 2015",
-    "link": "template.md",
-    "tags": ["Python"]
-  }, { 
-    "title": "Mauris eget lectus eget ligula semper laoreet",
-    "date": "29th December 2015",
-    "link": "template.md",
-    "tags": ["Python"]
+    "tags": ["Web-Dev"]
   }]
 }
