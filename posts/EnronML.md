@@ -1,3 +1,8 @@
+This post details my approach to the final project in Udacity's Intro to Machine Learning. This was a wonderful project which really forced me to **think** and really wish for the mentorship available in the paid option of the course. 
+
+### The Dataset and the Problem
+Enron, a multi-million enrgy superpower collapsed in the early 2000s due to one of the largest instances of corporate fraud. During the investigation, the company's email corpus was released to the public. In this project, I will be investigating the financial and email features of the data to identify employees involved in fraud (hereto referred as person of interest or poi).
+
 ### Data Exploration
 
 Measurement | Value | Observations
