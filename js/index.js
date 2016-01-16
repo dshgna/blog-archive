@@ -32,7 +32,9 @@ var display_snippets = function(){
            + "<button class='btn btn-default toggle-content' onclick='toggle_content("+ index + ")'> Read More/Less -> </button>" 
            + "</article>";
        $("main").prepend(item);
-       load_markdown(index, value.link); 
+       load_markdown(index, value.link);
     });
+    console.log(data.posts.length)
+    toggle_content(data.posts.length - 1); 
   });
 };
