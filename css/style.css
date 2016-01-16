@@ -37,8 +37,16 @@ main {
   font-weight: bold;
 }
 
-td {
-  padding: 3px 2px 3px 2px;
+tr:nth-child(even) {background-color: #887766}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    background-color: #224422;
+    color: white;
 }
 
 /* -------- TYPOGRAPHY ---------*/
