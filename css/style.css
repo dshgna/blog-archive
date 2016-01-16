@@ -37,7 +37,7 @@ main {
   font-weight: bold;
 }
 
-tr:nth-child(even) {background-color: #887766}
+tr:nth-child(even) {background-color: #CEEDCE}
 
 th, td {
     padding: 15px;
@@ -45,7 +45,7 @@ th, td {
 
 th {
     text-align: center;
-    background-color: #224422;
+    background-color: #555533;
     color: white;
 }
 
