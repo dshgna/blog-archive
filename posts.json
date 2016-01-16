@@ -1,8 +1,8 @@
 { "posts": [{ 
-    "title": "Mining the Enron Dataset",
-    "date": "15th January 2015",
-    "link": "EnronML.md",
-    "tags": ["Data Science, Python"]
+    "title": "Post Template",
+    "date": "29th December 2015",
+    "link": "template.md",
+    "tags": ["Web-Dev"]
   }, { 
     "title": "Scikit-learn Cheatsheet",
     "date": "12th January 2016",
@@ -14,9 +14,9 @@
     "link": "NotesUIML.md",
     "tags": ["Data Science, Python"]
   }, { 
-    "title": "Post Template",
-    "date": "29th December 2015",
-    "link": "template.md",
-    "tags": ["Web-Dev"]
+    "title": "Mining the Enron Dataset",
+    "date": "15th January 2015",
+    "link": "EnronML.md",
+    "tags": ["Data Science, Python"]
   }]
 }

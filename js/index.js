@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 var load_by_url = function(){
   var anchor = window.location.pathname
+  console.log(anchor)
   if (anchor!='') {
     $(document.getElementById(anchor)).toggle();
   } 
