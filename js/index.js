@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("aside").load("http://dshgna.github.io/templates/sidebar.html"); 
   display_snippets();
+  load_by_url()
 });
 
 var load_by_url = function(){
