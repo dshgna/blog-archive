@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("aside").load("http://codepen.io/dshgna/pen/qbqjmo.html"); 
+  $("aside").load("http://dshgna.github.io/templates/sidebar.html"); 
   display_snippets();
 });
 
