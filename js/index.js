@@ -7,7 +7,7 @@ $(document).ready(function() {
 var load_by_url = function(){
   var anchor = window.location.hash.split('#')[1]
   console.log(anchor)
-  if (anchor!='') {
+  if (anchor != undefined) {
     console.log(anchor)
     $(document.getElementById(anchor)).toggle();
   } 
