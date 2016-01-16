@@ -28,12 +28,12 @@ Missing values  |-|All features have missing values
 
 Feature | Outliers | Decision
 --- | --- | ---
-Salary-Total Payments | 146 | The high salaries in the plot corresponds to key Enron personalities (i.e.) thus we can safely assume that they are true values rather than outliers.
-Bonus | A mysterious non-POI figure with a mid-ranged salary and a bonus higher than the CEO! | Given the unexplainable discrepacy, remove this outlier.
-Deferred income | Five data points below the average containing 2 non-pois and 3 pois | Keep the datapoints as a significant amount of POIs are included and removing them would be detrimental for the quality of the data.
-Total stock value | A low-waged employee POI owning stocks well above the average | Could be an indication of fraud - data point left in
-Expenses | Three mid-waged employees non-POI employees incurring a large amount of expenses | *"These god-fearing souls were so frustrated with the surrounding fraud that they splurged on rich stationery!"* Due to the outliers not providing a significant value, they are removed.
-Exercised stock options | A low-waged employee POI owning stocks well above the average | Could be an indication of fraud - data point left in
+Salary-Total Payments | 3 outliers in salary and total payments | The points correspond to key Enron employees (e.g.Chairman Kenneth Lay) thus we can safely assume that they are valid.
+Bonus | A mid-wage non-POI earns a higher bonus than the CEO! | Given the unexplainable discrepacy, this outlier was removed.
+Deferred income | Five points below the average trend (2 non-pois and 3 pois) | The points are retained. Removing 3 POIs would be detrimental for the quality of the data.
+Total stock value | A low-wage POI owning stocks well above the average | Could be an indication of fraud - data point left in
+Expenses | Three mid-wage, non-POIs incur huge expenses | *"God-fearing souls splurging on rich stationery!"* The outliers were removed.
+Exercised stock options | A low-wage POI owning stocks well above the average | Could be an indication of fraud - data point left in
 Long term incentives | A low-waged employee POI owning stocks well above the average | Could be an indication of fraud - data point left in
-Restricted stock | A low-waged employee POI owning stocks well above the average | Could be an indication of fraud - data point left in
+Restricted stock | A low-wage POI owning stocks well above the average | Could be an indication of fraud - data point left in
 
