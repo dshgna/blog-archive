@@ -1,15 +1,18 @@
-This post details my approach to the final project in Udacity's Intro to Machine Learning. This was a wonderful project which really forced me to **think** and really wish for the mentorship available in the paid option of the course. 
+This post details my approach to the final project in Udacity's [Intro to Machine Learning](https://www.udacity.com/course/viewer#!/c-ud120/l-3335698626/m-3316018628). This was a wonderful project which forced me to **think** on the concepts I had learned throughout the course and appreciate the creativity and patience needed to garner effective results.  
 
 ### The Dataset and the Problem
-Enron, a multi-million enrgy superpower collapsed in the early 2000s due to one of the largest instances of corporate fraud. During the investigation, the company's email corpus was released to the public. In this project, I will be investigating the financial and email features of the data to identify employees involved in fraud (hereto referred as person of interest or poi).
+In the early 2000s, the multi-million enrgy superpower, Enron, collapsed in what would turn out to be one of the largest instances of corporate fraud. Following the investigation, the company's [email corpus](https://www.cs.cmu.edu/~./enron/) was released to the public, becoming one of the most studied datasets of all time.
+
+In this project, I will be investigating a dataset that combines the email corpus with employee financial data. My question revolves in identifying salient financial and email features of employees involved in the fraud (hereto referred as person of interest or poi).
 
 ### Data Exploration
 
-Measurement | Value | Observations
---- | --- | ---
+Measurement     | Value         | Observations
+| ------------- |:-------------:| -----|
 Total data points | 146 | -
 Allocation across classes | POI = 18 /non-POI = 128 | Low POI representation ( around 12%) 
 Number of features | 21 | 14 financial features, 7 email features
+
 
 ##### Handling Missing Values
  - All features have missing values
