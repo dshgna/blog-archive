@@ -13,7 +13,7 @@ aside {
   top:0;
   left:0;
   padding: 5% 3% 0%;
-  background-image: url("http://femmebot.github.io/google-type/images/space.jpg");
+  background-image: url("http://dshgna.github.io/images/background.jpg");
   background-size: cover;
   color: white;
 }
@@ -51,6 +51,10 @@ th {
 
 button {
   margin-top: 15px;
+}
+
+.post > img {
+  width: 100%;
 }
 
 /* -------- TYPOGRAPHY ---------*/
