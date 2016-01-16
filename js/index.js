@@ -3,6 +3,14 @@ $(document).ready(function() {
   display_snippets();
 });
 
+var load_by_url = function(){
+  var anchor = window.location.pathname
+  if (anchor!='') {
+    $(document.getElementById(anchor)).toggle();
+  } 
+}
+
+
 var toggle_content = function(index){
   $(document.getElementById(index)).toggle()
 }
@@ -23,7 +31,7 @@ var display_snippets = function(){
             "<div class='text-justify md-text' id='" + index + "'></div>"
            + "<button class='btn btn-default toggle-content' onclick='toggle_content("+ index + ")'> Read More/Less -> </button>" 
            + "</article>";
-       $("main").append(item);
+       $("main").prepend(item);
        load_markdown(index, value.link); 
     });
   });
