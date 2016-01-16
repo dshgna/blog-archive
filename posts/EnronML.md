@@ -10,22 +10,21 @@ In this project, I will be investigating a dataset that combines the email corpu
 Measurement     | Value         | Observations
 | ------------- |:-------------:| -----|
 Total data points | 146 | -
-Allocation across classes | POI = 18 /non-POI = 128 | Low POI representation ( around 12%) 
+POI data points | 18 | Low POI representation ( around 12%)
+non-POI data points | 128 | - 
 Number of features | 21 | 14 financial features, 7 email features
+Missing values  |-|All features have missing values
 
 
 #### Handling Missing Values
- - All features have missing values
- - The features (deferral_payments, loan_advances ,restricted_stock_deferred, deferred_income, long_term_incentive,director_fees) have more than 50% of their values missing.
- - The features ['deferral_payments', 'loan_advances', 'restricted_stock_deferred', 'director_fees'] have more than 50% of poi values missing. 
- - [restricted_stock_deferred, 'director_fees', 'loan_advances'] contains no or one value for POIs. However, given that these features do not have values for a large number of non-poi data points (>110), it is nt possible to divuluge whether these missing values are a novelty for pois. 
- - __Takeaway__: Due to the large amount of overall and poi missing values, it would be imprudent to use ['deferral_payments', 'loan_advances', 'restricted_stock_deferred', 'director_fees'] as features.
+ - Features with more than 50% missing values: `deferral_payments`, `loan_advances` ,`restricted_stock_deferred`, `deferred_income`, `long_term_incentive`, `director_fees`
+ - POIs with more than 50% missing values: `deferral_payments`, `loan_advances`, `restricted_stock_deferred`, `director_fees`
+ - __Conclusion__: The features `restricted_stock_deferred`, `director_fees`, `loan_advances` have both a large number of missing non-poi(>110) and poi(>17) values; therefore it would be imprudent to use them as features.
 
 #### Outlier Detection
- - I used visualization for outlier detection. While removing the top 10% values would have been more easier and 'programmatic', I felt this was not a good choice because it would remove some key POIs from the dataset. 
- - I used salary as the base and compared other financial features against it. I have not considered the features discarded due to the large amount of missing values. 
- - When analyzing the initial dataset, a data point significantly stood out (Figure 2.1), dwarfing the rest of the data. On inspection, this turned out  not to be a data point, but rather the 'TOTAL' which had been erroneously appended to the dataset.
- - The following details the rest of the outliers detected when comparing various features against each other(Figure 2.2).
+ - Visualization was used for outlier detection. While removing the top 10% values would have been faster and 'programmatic', this was not appropriate here as it would remove a significant POIs from the dataset. 
+ - A data point significantly stood out in the initial dataset (Figure 2.1), dwarfing the rest of the data. On inspection, this turned out to be the 'TOTAL' which had been erroneously appended to the dataset.
+ - The resultant dataset was visualized by plotting `salary` against the other financial features (Figure 2.2).
 
 Feature | Outliers | Decision
 --- | --- | ---
