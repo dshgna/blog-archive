@@ -4,16 +4,6 @@ $(document).ready(function() {
   load_by_url()
 });
 
-var load_by_url = function(){
-  var anchor = window.location.hash.split('#')[1]
-  console.log(anchor)
-  if (anchor != undefined) {
-    console.log(anchor)
-    $(document.getElementById(anchor)).toggle();
-  } 
-}
-
-
 var toggle_content = function(index){
   $(document.getElementById(index)).toggle()
 }
@@ -25,6 +15,13 @@ var load_markdown = function(index, filename){
   $.get(path, function(data) {
     $(document.getElementById(index)).append(md.render(data));
   }); 
+}
+
+var load_by_url = function(){
+  var anchor = window.location.hash.split('#')[1]
+  if (anchor != undefined) {
+    toggle_content(anchor);
+  } 
 }
 
 var display_snippets = function(){
