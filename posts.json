@@ -1,6 +1,6 @@
 { "posts": [{ 
     "title": "Mining the Enron Dataset",
-    "date": "15th December 2015",
+    "date": "15th January 2015",
     "link": "EnronML.md",
     "tags": ["Data Science, Python"]
   }, { 

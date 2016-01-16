@@ -49,6 +49,10 @@ th {
     color: white;
 }
 
+button {
+  margin-top: 15px;
+}
+
 /* -------- TYPOGRAPHY ---------*/
 #title {
   color: white !important;
