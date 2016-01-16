@@ -1,9 +1,9 @@
-This post details my approach to the final project in Udacity's [Intro to Machine Learning](https://www.udacity.com/course/viewer#!/c-ud120/l-3335698626/m-3316018628). This was a wonderful project which forced me to **think** on the concepts I had learned throughout the course and appreciate the creativity and patience needed to garner effective results.  
+This post details my approach to the final project in Udacity's [Intro to Machine Learning](https://www.udacity.com/course/viewer#!/c-ud120/l-3335698626/m-3316018628). This was a practical project which forced me to **think** and appreciate the creativity, logic and patience needed to garner accurate results.  
 
 ### The Dataset and the Problem
-In the early 2000s, the multi-million enrgy superpower, Enron, collapsed in what would turn out to be one of the largest instances of corporate fraud. Following the investigation, the company's [email corpus](https://www.cs.cmu.edu/~./enron/) was released to the public, becoming one of the most studied datasets of all time.
+In the early 2000s, the multi-million enrgy superpower, Enron, collapsed in what would turn out to be one of the greatest cases of corporate fraud of all time.
 
-In this project, I will be investigating a dataset that combines the email corpus with employee financial data. My question revolves in identifying salient financial and email features of employees involved in the fraud (hereto referred as person of interest or poi).
+In this project, I investigated the Enron [email corpus](https://www.cs.cmu.edu/~./enron/) together with employee financial data to identify employees' involved in the fraud (hereto referred as person of interest or poi).
 
 ### Data Exploration
 
