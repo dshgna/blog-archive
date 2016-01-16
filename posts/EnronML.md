@@ -26,6 +26,8 @@ Missing values  |-|All features have missing values
  - A data point significantly stood out in the initial dataset (Figure 2.1), dwarfing the rest of the data. On inspection, this turned out to be the 'TOTAL' which had been erroneously appended to the dataset.
  - The resultant dataset was visualized by plotting `salary` against the other financial features (Figure 2.2).
 
+![Financial Outliers](http://dshgna.github.io/images/financial_features.PNG "Financial Outliers")
+
 Feature | Outliers | Decision
 --- | --- | ---
 Salary-Total Payments | 3 outliers in salary and total payments | The points correspond to key Enron employees (e.g.Chairman Kenneth Lay) thus we can safely assume that they are valid.
