@@ -34,7 +34,6 @@ var display_snippets = function(){
        $("main").prepend(item);
        load_markdown(index, value.link);
     });
-    console.log(data.posts.length)
     toggle_content(data.posts.length - 1); 
   });
 };
