@@ -21,7 +21,7 @@ Missing values  |-|All features have missing values
  - POIs with more than 50% missing values: `deferral_payments`, `loan_advances`, `restricted_stock_deferred`, `director_fees`
  - __Conclusion__: The features `restricted_stock_deferred`, `director_fees`, `loan_advances` have both a large number of missing non-poi(>110) and poi(>17) values; therefore it would be imprudent to use them as features.
 
-#### Outlier Detection
+#### Outlier Investigation
  - This was the most time consuming step which made me fully appreciate the complexity of dealing with real world data.
  - Visualization was used for outlier detection. While removing the top 10% values would have been faster and 'programmatic', this was not appropriate here as it would remove a significant POIs from the dataset. 
  - A data point significantly stood out in the initial dataset, dwarfing the rest of the data. On inspection, this turned out to be the `TOTAL` which had been erroneously appended to the dataset.
@@ -44,3 +44,5 @@ Now for the resultant dataset: significantly cleaner.
 
 ![Financial Outliers](http://dshgna.github.io/images/financial_features_adjusted.PNG "Financial Outliers")
 Figure 2: Dataset after outlier removal
+
+#### Feature Selection
