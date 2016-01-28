@@ -1,4 +1,4 @@
-{ "posts": [{ 
+[{ 
     "title": "Post Template",
     "date": "29th December 2015",
     "link": "template.md",
@@ -18,5 +18,5 @@
     "date": "15th January 2015",
     "link": "EnronML.md",
     "tags": ["Data Science, Python"]
-  }]
-}
+  }
+]
