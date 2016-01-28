@@ -1,21 +1,25 @@
 [{ 
     "title": "Post Template",
     "date": "29th December 2015",
+    "description": "This is a template post. Modify this and add your content. After creating the post, you have to manually add the link, date and title for your post to index.js.",
     "link": "template.md",
     "tags": ["Web-Dev"]
   }, { 
     "title": "Scikit-learn Cheatsheet",
     "date": "12th January 2016",
+    "description": "",
     "link": "ScikitLearn.md",
     "tags": ["Data Science, Python"]
   }, { 
     "title": "Introductory Notes on Machine Learning [Udacity]",
     "date": "12th January 2016",
+    "description": "The following are my notes for Udacity's Intro to Machine Learning together with a cheatsheet of the common scikit learn functions used.",
     "link": "NotesUIML.md",
     "tags": ["Data Science, Python"]
   }, { 
     "title": "Mining the Enron Dataset",
     "date": "15th January 2015",
+    "description": "This post details my approach to the final project in Udacity's Intro to Machine Learning. This was a practical project which forced me to think and appreciate the creativity, logic and patience needed to garner accurate results.",
     "link": "EnronML.md",
     "tags": ["Data Science, Python"]
   }
