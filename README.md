@@ -1,18 +1,24 @@
 # dshgna.github.io
 
 ### Kudos to these great projects
-- Codepen
-- Disqus
-- Bootstrap
-- Animate CSS
-- Jquery
-- Google Fonts
-- Font Awesome
+- [React] and [react-router]
+- [Codepen]
+- [Bootstrap]
+- [Animate CSS]
+- [Jquery]
+- [Google Fonts]
+- [Font Awesome]
 - [Dillinger]: Markdown editor
-- [Remarkable]: Javascript markdown parser
 
 ### Image Credits
 Sidebar: https://github.com/femmebot/google-type
 
-[Remarkable]: https://github.com/jonschlinkert/remarkable
+[React]: https://facebook.github.io/react/
+[react-router]: https://github.com/rackt/react-router
+[Codepen]: http://codepen.io/
+[Bootstrap]: http://getbootstrap.com/
+[Animate CSS]: https://daneden.github.io/animate.css/
+[Jquery]: http://jquery.com/
+[Google Fonts]: https://www.google.com/fonts
+[Font Awesome]: https://fortawesome.github.io/Font-Awesome/ 
 [Dillinger]: http://dillinger.io/
