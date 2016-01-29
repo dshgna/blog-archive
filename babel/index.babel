@@ -1,0 +1,109 @@
+const { Router, Route, IndexRoute, Redirect, Link, IndexLink} = ReactRouter
+
+var SideBar = React.createClass({
+  render: function() {
+    return (
+      <div className="sideBar">
+        <h1 className="text-center"><Link to={`/`} id="title">Dulshani Gunawardhana</Link></h1>
+        <div className="social-media">
+          <a href="https://www.facebook.com/dulshani.gunawardhana" target="_blank"><i className="fa fa-facebook fa-2x"></i></a>
+          <a href="https://lk.linkedin.com/in/dulshanig" target="_blank"><i className="fa fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/dshgna" target="_blank"><i className="fa fa-github-alt fa-2x"></i></a>
+        </div>
+      </div>
+    );
+  }
+});
+
+const App = React.createClass({
+  getInitialState: function() {
+    return {data: []};
+  },
+  componentDidMount: function() {
+    $.ajax({
+      url: "http://dshgna.github.io/posts.json",
+      dataType: 'json',
+      cache: true,
+      success: function(data) {
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  render: function() { 
+    var childrenWithProps = React.Children.map(this.props.children, (child) => {
+      return React.cloneElement(child, { data: this.state.data });
+    });
+    return (
+      <div class="container-fluid">
+        <aside id ="sidebar"><SideBar /></aside>
+        <main><div id="content">{childrenWithProps}</div></main>
+      </div>
+  )}
+});
+
+const Post = React.createClass({
+  getInitialState: function() {
+    return {data: []};
+  },
+  componentDidMount: function() {
+    const id = this.props.params.id;
+    const info = this.props.data;
+    var path = 'http://dshgna.github.io/posts/' + info[id]["link"];
+    $.ajax({
+      url: path,
+      cache: false,
+      success: function(data) {
+        this.setState({
+          title: info[id]["title"],
+          date: info[id]["date"],
+          data: data
+        });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(path, status, err.toString());
+      }.bind(this)
+    });
+  },
+  rawMarkup: function() {
+    console.log(this.state)
+    var rawMarkup = marked(this.state.data.toString(), {sanitize: true});
+    return { __html: rawMarkup };
+  },
+  render: function() {
+    return (
+      <div className="post">
+        <h1>{this.state.title}</h1>
+        <p className='date'>{this.state.date}</p><br/>
+        <span dangerouslySetInnerHTML={this.rawMarkup()} />
+      </div>
+    );
+  }
+});
+
+const PostList = React.createClass({
+  render: function() { 
+    var postNodes = this.props.data.reverse().map(function(post, index){
+      return (
+        <div className="post">
+          <h1>{post.title}</h1>
+          <p className='date'>{post.date}</p><br/>
+          <p>{post.description}</p>
+          <Link to={`posts/${index}`}>Read More-></Link>
+        </div>
+        );});   
+    return (
+      <div className="content">{postNodes}</div>
+    );}
+});
+
+ReactDOM.render((
+  <Router>
+    <Route path="/" component={App}>
+      <IndexRoute component={PostList}/>
+      <Route path="posts/:id" component={Post}/>
+    </Route>
+  </Router>
+), document.body)
