@@ -1,6 +1,6 @@
 # dshgna.github.io
 
-### Kudos to these great projects
+### Created with these great projects
 - [React] and [react-router]
 - [Codepen]
 - [Bootstrap]
