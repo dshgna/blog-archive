@@ -200,5 +200,5 @@ const Post = React.createClass({
 ## Winding Up
 
 Learning React while building my blog was a wonderful experience that forced me to get my hands dirty and develop a 'hacking' mindset. And while I love my initial prototype, there's a few more functionality I hope to add in future.
-1. Disqus comments
-2. Google webmaster tools
+1. Currently I jave to manually edit the json file to include data for each new post. This can be made easier by hosting an instance of Dillinger on Heroku and using node.js to automate updating the json file. 
+2. Integrate Disqus comments and Google webmaster tools for more interactivity.
