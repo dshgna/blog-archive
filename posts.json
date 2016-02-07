@@ -18,9 +18,15 @@
     "tags": ["Data Science, Python"]
   }, { 
     "title": "Mining the Enron Dataset",
-    "date": "15th January 2015",
+    "date": "15th January 2016",
     "description": "This post details my approach to the final project in Udacity's Intro to Machine Learning. This was a practical project which forced me to think and appreciate the creativity, logic and patience needed to garner accurate results.",
     "link": "EnronML.md",
     "tags": ["Data Science, Python"]
+  }, { 
+    "title": "Blogging with React",
+    "date": "7th February 2016",
+    "description": "This post details how I learned React JS by developing my current blog. React is a Javascript library developed by Facebook to render user interfaces. Lightweight and simple, I greatly enjoyed the development experience. ",
+    "link": "ReactBlog.md",
+    "tags": ["Frontend Dev, Javascript"]
   }
 ]
