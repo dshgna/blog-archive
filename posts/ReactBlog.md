@@ -1,6 +1,6 @@
-This post details how I learned React JS by developing my current blog. React is a Javascript library developed by Facebook to render user interfaces. Lightweight and simple, I greatly enjoyed the development experience. 
+Building my blog from scratch was on my todo list for a very long time. Finally, I managed to get the dream realized and learn ReactJS in the process.
 
-A majority of bloggers use Jekyll, the awesome static site generator that powers Github. While I enjoyed the overall experience of using Jekyll, I wanted to experiment with building my own blog, grounds up. I initially used a simple one paged site using an amalgam of Bootstrap, Javascript and JQuery. Then I decided I wanted something more robust, and learnt React JS in the process.
+The majority of Github bloggers use Jekyll, the awesome static site generator that powers Github. While I enjoyed the overall experience of using Jekyll, I wanted to experiment with building my own blog, grounds up. I initially used a simple one paged site using an amalgam of Bootstrap, Javascript and JQuery. Then I decided I wanted something more robust, and learnt React JS in the process.
 
 ## Prototyping
  - Visual Design - My UI design was inspired by another [blog](http://dillinger.io/) and was minimalistic, consisting of a sidebar and content area.
@@ -8,7 +8,15 @@ A majority of bloggers use Jekyll, the awesome static site generator that powers
 
 ## Diving In
 
-React breaks down the user interface into a hierarchy of individual components, each of which has a single responsibility. The blog is made up of a root component App, and it's three children: the sidebar, post list and individual posts. 
+React is a frontend Javascript library developed by Facebook and used extensively in their codebase. Unlike fully-fledged frameworks such as AngularJS, it focuses on just two functionalities.
+- Rendering UI components to the DOM
+- Event Handling
+
+The main advantages of React are its speed, devlarative bindings and composabilit, all which I'll go into more detail in this post.
+
+React breaks down the user interface into a hierarchy of individual components, each of which has a single responsibility. The blog is made up of a root component App, and it's three children: the sidebar, post list and individual post pages. 
+
+
 
 #### Including external libraries
 
