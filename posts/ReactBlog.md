@@ -14,9 +14,9 @@ React is a frontend Javascript library developed by Facebook and used extensivel
 
 The main advantages of React are its speed, devlarative bindings and composabilit, all which I'll go into more detail in this post.
 
-React breaks down the user interface into a hierarchy of individual components, each of which has a single responsibility. The blog is made up of a root component App, and it's three children: the sidebar, post list and individual post pages. 
+React breaks down the user interface into a hierarchy of components, each which corresponds to a DOM element. Components can be nested within each other, where a nested component corresponds to a nested element in the DOM. 
 
-
+Now lets look at how I used components in my blog application. It contains a root component `App` which consists of three nested components: `sidebar`, `post list` and `post page`. 
 
 #### Including external libraries
 
