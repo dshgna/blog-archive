@@ -1,6 +1,6 @@
 Building my blog from scratch was on my todo list for a very long time. Finally, I made it and learnt ReactJS in the process!
 
-The majority of Github bloggers use Jekyll, the awesome static site generator that powers Github. While I enjoyed the overall experience of using Jekyll, I wanted to experiment with building my own blog, grounds up. I initially used a simple one paged site using an amalgam of Bootstrap, Javascript and JQuery. Then I decided I wanted something more robust, and learnt React JS in the process.
+The majority of Github bloggers use Jekyll, the static site generator that powers Github. While I enjoyed the overall experience of Jekyll, I wanted it a bit too complex for my needs and wanted to experiment with building my own blog, grounds up. I initially used a simple one paged site using an amalgam of Bootstrap, Javascript and JQuery. Then I decided I wanted something more robust, and learnt React JS in the process.
 
 ## Prototyping
  - Visual Design - My UI design was inspired by another [blog](http://dillinger.io/) and was minimalistic, consisting of a sidebar and content area.
