@@ -7,26 +7,26 @@
   }, { 
     "title": "Scikit-learn Cheatsheet",
     "date": "12th January 2016",
-    "description": "",
+    "description": "Scikit-learn is one of the most robust machine learning libraries around. A cheatsheet of the common scikit learn functions used.",
     "link": "ScikitLearn.md",
     "tags": ["Data Science, Python"]
   }, { 
-    "title": "Introductory Notes on Machine Learning [Udacity]",
+    "title": "Diving into Machine Learning",
     "date": "12th January 2016",
-    "description": "The following are my notes for Udacity's Intro to Machine Learning together with a cheatsheet of the common scikit learn functions used.",
+    "description": "I took the plunge into the world of MOOCs with Udacity's Intro to Machine Learning. I had done undergraduate coursework on Machine Learning and that theoritical foundation helped me a lot when diving into practical implementation. Here are my notes on some of the most important concepts learnt.",
     "link": "NotesUIML.md",
-    "tags": ["Data Science, Python"]
+    "tags": ["Data Science", "Python"]
   }, { 
     "title": "Mining the Enron Dataset",
     "date": "15th January 2016",
-    "description": "This post details my approach to the final project in Udacity's Intro to Machine Learning. This was a practical project which forced me to think and appreciate the creativity, logic and patience needed to garner accurate results.",
+    "description": "The final project for Udacity's Machine Learning course involved working with the real life Enron email and financial dataset to identify the employees who were most likely to commit fraud. It forced me to think and appreciate the creativity, logic and patience needed to get accurate results.",
     "link": "EnronML.md",
-    "tags": ["Data Science, Python"]
+    "tags": ["Data Science", "Python"]
   }, { 
     "title": "Blogging with React",
     "date": "7th February 2016",
-    "description": "This post details how I learned React JS by developing my current blog. React is a Javascript library developed by Facebook to render user interfaces. Lightweight and simple, I greatly enjoyed the development experience. ",
+    "description": "Building my blog from scratch has been my 'always-in-progress' side-project for the longest time. I started off with a messy Wordpress, progressed to the solid but unnecessarily complex Jekyll; and finally rolled out my own with vanilla JS and jQuery. Then I discovered React, a simple and powerful Javascript UI library. I worked my way through the official tutorial, applying the steps to refactor my blog. Here's how I made things work!",
     "link": "ReactBlog.md",
-    "tags": ["Frontend Dev, Javascript"]
+    "tags": ["Frontend", "Javascript", "React"]
   }
 ]
