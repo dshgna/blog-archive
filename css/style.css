@@ -1,26 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 /* -------- LAYOUT ---------*/
-aside {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15em;
+.header {
+  font-family: 'Pacifico', serif;
   font-weight: 400;
+  font-size: 48px;
   line-height: 1.63043em;
   position:fixed;
-  height:100%;
-  width: 28%; 
-  top:0;
-  left:0;
-  padding: 5% 3% 0%;
-  background-image: url("http://dshgna.github.io/images/background.jpg");
+  height:85px;
+  width: 100%; 
+  padding-left: 2%;
+  background-image: url("http://femmebot.github.io/google-type/images/space.jpg");
   background-size: cover;
   color: white;
+  top: 0;
 }
 
 main {
-  margin-left: 25%;
-  padding: 0% 6% 0% 12%;
+  margin-top: 85px;
+  padding: 2% 6% 2% 12%;
 }
 
 .social-media {
@@ -28,65 +28,48 @@ main {
 }
 
 .md-text {
-  display: none;
+    display: none;
+}
+
+.md-text p:first-of-type {
+    display: true;
 }
 
 .date {
   display: block;
-  margin: 15px 0 12px 0;
-  font-weight: bold;
+  margin: -3px 0 -5px 0;
 }
 
-tr:nth-child(even) {background-color: #CEEDCE}
-
-th, td {
-    padding: 15px;
+.tag{
+  display: flex;
+  margin: 4px 0 2px;
+  justify-content: center;
 }
 
-th {
-    text-align: center;
-    background-color: #555533;
-    color: white;
-}
-
-button {
-  margin-top: 15px;
-}
-
-.post img {
-  width: 100%;
+.label{
+  margin-right: 5px;
 }
 
 /* -------- TYPOGRAPHY ---------*/
 #title {
   color: white !important;
   display: block;
-  margin-bottom: 10%;
+  font-size: 1em !important;
 }
 
 #title:hover,
 #title:focus {
-    -webkit-animation: bounce 1s;
-    animation: bounce 1s;
     text-decoration: none;
 }
 
 .post {
   font-family: 'Lora', serif;
   display: block;
-  margin: 0 0 60px 0;
-  font-weight: 400;
+  margin: 30px 0 60px 0;
+  font-size: 1.2em;
   line-height: 1.63043em;
   color: #454646;
-}
-
-.post > h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin: 30px 0 20px;
-}
-
-.post > p{
-  font-size: 1.15em;
+  text-align: justify;
 }
 
 /* -------- ICONS ---------*/
@@ -111,4 +94,8 @@ a {
   -webkit-animation: pulse 1s;
   animation: pulse 1s;
   text-decoration: none;
+}
+
+#read-more{
+  float: right;
 }
