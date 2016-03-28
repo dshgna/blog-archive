@@ -36,9 +36,8 @@ main {
 }
 
 .tag{
-  display: flex;
+  display: inline-flex;
   margin: 1em 0 1.8em;
-  justify-content: center;
 }
 
 .label-tag {
