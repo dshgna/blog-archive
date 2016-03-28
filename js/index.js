@@ -182,7 +182,6 @@ var PostList = React.createClass({
           post.date
         ),
         React.createElement(Tag, { tag: post.tags }),
-        React.createElement("br", null),
         React.createElement(
           "p",
           null,
@@ -194,7 +193,7 @@ var PostList = React.createClass({
           React.createElement(
             Link,
             { to: "posts/" + index, id: "read-more" },
-            "<-Read More->"
+            "<- Read More ->"
           )
         )
       );
