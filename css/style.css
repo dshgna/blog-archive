@@ -37,7 +37,7 @@ main {
 
 .tag{
   display: inline-flex;
-  margin: 1em 0 1.8em;
+  margin-left: 12px;
 }
 
 .label-tag {
@@ -72,7 +72,7 @@ h2 {
   margin: 12px;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: baseline;
 }
 
 .date {
