@@ -185,15 +185,11 @@ var PostList = React.createClass({
         React.createElement(
           "p",
           null,
-          post.description
-        ),
-        React.createElement(
-          "div",
-          { className: "text-center" },
+          post.description,
           React.createElement(
             Link,
             { to: "posts/" + index, id: "read-more" },
-            "<- Read More ->"
+            "Read More->"
           )
         )
       );
