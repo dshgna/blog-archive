@@ -37,8 +37,8 @@ main {
 
 .date-tag {
   display: flex;
-  align-items: flex-end;
-  justify-content: baseline;
+  align-items: baseline;
+  justify-content: center;
   margin: 1em 0 1.8em;
 }
 
