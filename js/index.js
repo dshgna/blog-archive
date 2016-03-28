@@ -148,7 +148,7 @@ var Post = React.createClass({
       "div",
       { className: "post" },
       React.createElement(
-        "h1",
+        "h2",
         null,
         this.state.title
       ),
@@ -187,9 +187,10 @@ var PostList = React.createClass({
           null,
           post.description,
           React.createElement(
+            "b",
             Link,
             { to: "posts/" + index, id: "read-more" },
-            "Read More->"
+            "<- Read More ->"
           )
         )
       );
