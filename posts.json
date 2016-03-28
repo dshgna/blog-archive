@@ -27,6 +27,6 @@
     "date": "7th February 2016",
     "description": "Building my blog from scratch has been my 'in-progress' side-project for the longest time. I started off with messy Wordpress, progressed to the solid but unnecessarily complex Jekyll; and finally rolled out my own with vanilla Javascript and jQuery. Then I discovered ReactJS, a simple and powerful Javascript UI library. I worked my way through the official tutorial, applying the steps to refactor my blog. Here's how I made things work!",
     "link": "ReactBlog.md",
-    "tags": ["Frontend", "Javascript", "React"]
+    "tags": ["Frontend", "ReactJS"]
   }
 ]

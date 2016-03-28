@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
@@ -38,7 +37,7 @@ main {
 
 .tag{
   display: flex;
-  margin: 4px 0 2px;
+  margin: 1em 0 1.8em;
   justify-content: center;
 }
 
@@ -68,13 +67,13 @@ h2, h3, h4, h5 {
 
 h2 {
   font-size: 2em;
-  font-family: 'Abril Fatface', serif;
 }
 
 .date {
   display: block;
-  margin-bottom: 12px;
+  margin: 12px;
   font-family: 'Lora', serif;
+  font-weight: bold;
 }
 
 #read-more{
@@ -86,7 +85,7 @@ h2 {
 .post {
   font-family: 'Lora', serif;
   display: block;
-  margin: 30px 0 60px 0;
+  margin: 2em 0 5em 0;
   font-size: 1.4em;
   line-height: 1.63043em;
   color: #454646;
