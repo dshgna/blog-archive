@@ -35,9 +35,21 @@ main {
     display: true;
 }
 
+.date-tag {
+  display: flex;
+  align-items: flex-end;
+  justify-content: baseline;
+  margin: 1em 0 1.8em;
+}
+
+.date {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+}
+
 .tag{
   display: inline-flex;
-  margin-left: 12px;
+  margin: 12px;
 }
 
 .label-tag {
@@ -66,18 +78,6 @@ h2, h3, h4, h5 {
 
 h2 {
   font-size: 2em;
-}
-
-.date-tag {
-  margin: 12px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: baseline;
-}
-
-.date {
-  font-family: 'Lora', serif;
-  font-weight: bold;
 }
 
 #read-more{
