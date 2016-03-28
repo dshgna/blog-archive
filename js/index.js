@@ -177,7 +177,7 @@ var PostList = React.createClass({
         ),
         React.createElement(
           "div",
-          { className: "text-center" },
+          { className: "text-center date-tag" },
           React.createElement("span",{ className: "date " }, post.date),
           React.createElement(Tag, { tag: post.tags })
         ),

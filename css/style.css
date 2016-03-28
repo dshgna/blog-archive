@@ -68,9 +68,11 @@ h2 {
   font-size: 2em;
 }
 
-.date {
-  display: block;
+.date-tag {
   margin: 12px;
+}
+
+.date {
   font-family: 'Lora', serif;
   font-weight: bold;
 }
