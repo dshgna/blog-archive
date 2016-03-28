@@ -101,7 +101,7 @@ var Tag = React.createClass({
     var tagNodes = this.props.tag.map(function (t) {
       return React.createElement(
         "p",
-        { className: "label label-success" },
+        { className: "label label-tag" },
         t
       );
     });
