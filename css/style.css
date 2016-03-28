@@ -36,11 +36,6 @@ main {
     display: true;
 }
 
-.date {
-  display: block;
-  margin: -3px 0 0 0;
-}
-
 .tag{
   display: flex;
   margin: 4px 0 2px;
@@ -68,7 +63,18 @@ main {
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2.2em;
+  font-family: 'Abril Fatface', serif;
+}
+
+.date {
+  display: block;
+  margin: -3px 0 0 0;
+  font-family: 'Lora', serif;
+}
+
+#read-more{
+  color: #440633;
   font-family: 'Abril Fatface', serif;
 }
 
@@ -104,8 +110,4 @@ a {
   -webkit-animation: pulse 1s;
   animation: pulse 1s;
   text-decoration: none;
-}
-
-#read-more{
-  color: #440633;
 }
