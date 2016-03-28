@@ -41,7 +41,7 @@ var About = React.createClass({
         React.createElement(
           Link,
           { to: "/", id: "title" },
-          "Dulshani Gunawardhana"
+          "Dulshani Gunawardhana's Blog"
         )
       )
     );

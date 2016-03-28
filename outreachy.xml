@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+	   <title>Dulshani's Outreachy Experience</title>
+	   <description>Dulshani's Outreachy Experience</description>
+	   <link>http://dshgna.github.io</link>
+	   <atom:link href="http://dshgna.github.io/outreachy.xml" rel="self" type="application/rss+xml" />
+
+	   <item>
+	     <title>I made it into Outreachy!</title>
+	     <link>http://alexanderle.com/blog/create-an-rss-feed.html</link>
+	     <guid>http://alexanderle.com/blog/create-an-rss-feed.html</guid>
+	     <pubDate>Wed, 11 Apr 2012 00:00:00 MST</pubDate>
+	   </item>
+
+	</channel>
+</rss>
