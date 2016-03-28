@@ -179,9 +179,9 @@ var PostList = React.createClass({
         React.createElement(
           "p",
           { className: "date text-center" },
-          post.date
+          post.date,
+          React.createElement(Tag, { tag: post.tags })
         ),
-        React.createElement(Tag, { tag: post.tags }),
         React.createElement(
           "p",
           null,
