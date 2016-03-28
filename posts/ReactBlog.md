@@ -2,11 +2,11 @@ Building my blog from scratch was on my todo list for a very long time. Finally,
 
 The majority of Github bloggers use Jekyll, the static site generator that powers Github. While I enjoyed the overall experience of Jekyll, I wanted it a bit too complex for my needs and wanted to experiment with building my own blog, grounds up. I initially used a simple one paged site using an amalgam of Bootstrap, Javascript and JQuery. Then I decided I wanted something more robust, and learnt React JS in the process.
 
-## Prototyping
+### Prototyping
  - Visual Design - My UI design was inspired by another [blog](http://dillinger.io/) and was minimalistic, consisting of a sidebar and content area.
  - Post Creation - I wanted to edit my blog posts online, and used [Dillinger](http://dillinger.io/), an online markdown editor that supports importing and exporting from Github.
 
-## Diving In
+### Diving In
 
 React is a frontend Javascript library developed by Facebook and used extensively in their codebase. Unlike fully-fledged frameworks such as AngularJS, it focuses on just two functionalities.
 - Rendering UI components to the DOM
@@ -205,7 +205,7 @@ const Post = React.createClass({
 });
 ```
 
-## Winding Up
+### Winding Up
 
 Learning React while building my blog was a wonderful experience that forced me to get my hands dirty and develop a 'hacking' mindset. And while I love my initial prototype, there's a few more functionality I hope to add in future.
 1. Currently I jave to manually edit the json file to include data for each new post. This can be made easier by hosting an instance of Dillinger on Heroku and using node.js to automate updating the json file. 
