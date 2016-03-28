@@ -187,10 +187,10 @@ var PostList = React.createClass({
           null,
           post.description,
           React.createElement(
-            "b",
             Link,
             { to: "posts/" + index, id: "read-more" },
-            "<- Read More ->"
+            "b",
+            <- Read More ->
           )
         )
       );
