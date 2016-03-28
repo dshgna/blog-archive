@@ -78,7 +78,7 @@ var App = React.createClass({
       { "class": "container-fluid" },
       React.createElement(
         "div",
-        { id: "sidebar" },
+        { id: "header" },
         React.createElement(Header, null)
       ),
       React.createElement(
@@ -176,12 +176,12 @@ var PostList = React.createClass({
           { className: "text-center" },
           post.title
         ),
-        React.createElement(Tag, { tag: post.tags }),
         React.createElement(
           "p",
           { className: "date text-center" },
           post.date
         ),
+        React.createElement(Tag, { tag: post.tags }),
         React.createElement("br", null),
         React.createElement(
           "p",

@@ -20,7 +20,7 @@
 
 main {
   margin-top: 85px;
-  padding: 2% 6% 2% 12%;
+  padding: 2% 12.5% 2% 12%;
 }
 
 .social-media {
@@ -59,14 +59,18 @@ main {
 
 #title:hover,
 #title:focus {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em !important;
 }
 
 .post {
   font-family: 'Lora', serif;
   display: block;
   margin: 30px 0 60px 0;
-  font-size: 1.2em;
+  font-size: 1.6em;
   line-height: 1.63043em;
   color: #454646;
   text-align: justify;
