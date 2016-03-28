@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
 
 /* -------- LAYOUT ---------*/
 .header {
@@ -37,13 +38,17 @@ main {
 
 .date {
   display: block;
-  margin: -3px 0 -5px 0;
+  margin: -3px 0 0 0;
 }
 
 .tag{
   display: flex;
   margin: 4px 0 2px;
   justify-content: center;
+}
+
+.label-tag {
+  background-color: #440633;
 }
 
 .label{
@@ -63,14 +68,15 @@ main {
 }
 
 h2 {
-  font-size: 3em !important;
+  font-size: 2.4em;
+  font-family: 'Abril Fatface', serif;
 }
 
 .post {
   font-family: 'Lora', serif;
   display: block;
   margin: 30px 0 60px 0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.63043em;
   color: #454646;
   text-align: justify;
