@@ -100,7 +100,7 @@ var Tag = React.createClass({
   render: function render() {
     var tagNodes = this.props.tag.map(function (t) {
       return React.createElement(
-        "p",
+        "span",
         { className: "label label-tag" },
         t
       );
@@ -165,7 +165,6 @@ var Post = React.createClass({
 
 var PostList = React.createClass({
   displayName: "PostList",
-
   render: function render() {
     var postNodes = this.props.data.map(function (post, index) {
       return React.createElement(
